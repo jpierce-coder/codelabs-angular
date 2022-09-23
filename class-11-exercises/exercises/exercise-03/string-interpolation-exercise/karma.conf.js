@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/create-complex-structure'),
+      dir: require('path').join(__dirname, './coverage/string-interpolation-exercise'),
       subdir: '.',
       reporters: [
         { type: 'html' },
