@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ternary-operator-string-interpolation": {
+    "basic-property-binding": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ternary-operator-string-interpolation",
+            "outputPath": "dist/basic-property-binding",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ternary-operator-string-interpolation:build:production"
+              "browserTarget": "basic-property-binding:build:production"
             },
             "development": {
-              "browserTarget": "ternary-operator-string-interpolation:build:development"
+              "browserTarget": "basic-property-binding:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ternary-operator-string-interpolation:build"
+            "browserTarget": "basic-property-binding:build"
           }
         },
         "test": {

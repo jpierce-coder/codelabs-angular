@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/ternary-operator-string-interpolation'),
+      dir: require('path').join(__dirname, './coverage/basic-property-binding'),
       subdir: '.',
       reporters: [
         { type: 'html' },
