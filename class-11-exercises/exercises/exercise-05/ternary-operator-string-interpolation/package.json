@@ -1,5 +1,5 @@
 {
-  "name": "string-interpolation-object",
+  "name": "ternary-operator-string-interpolation",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
