@@ -9,7 +9,7 @@ export class AppComponent {
   title:string = 'header'
 
 
-  changeTitle(e) {
-    this.title = e.target.value;
-  }
+  // changeTitle(e) {
+  //   this.title = e.target.value;
+  // }
 }

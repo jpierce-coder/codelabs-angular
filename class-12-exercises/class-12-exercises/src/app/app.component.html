@@ -2,4 +2,4 @@
 
 <h2>{{title}}</h2>
 
-<input type="text" [value]="title" (input)="changeTitle($event)">
+<input type="text" [value]="title" (input)="title = $event.target.value">
