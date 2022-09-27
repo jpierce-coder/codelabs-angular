@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basic-event-binding-exercise';
+
+
+  logConsole() {
+    console.log('I want to be a programmer!')
+  }
 }
