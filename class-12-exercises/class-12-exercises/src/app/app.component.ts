@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'class-12-exercises';
+  title:string = 'header'
+
+
+  changeTitle(e) {
+    this.title = e.target.value;
+  }
 }
