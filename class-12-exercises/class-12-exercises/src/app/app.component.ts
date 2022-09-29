@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isShow:boolean = true;
+  isShowContent:boolean = true;
+
 }
