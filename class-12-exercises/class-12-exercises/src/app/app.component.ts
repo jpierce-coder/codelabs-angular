@@ -7,5 +7,10 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  changeColor:string = 'green'
+  foods:string[] = [
+    'orange',
+    'banana',
+    'apple',
+    'pear'
+  ]
 }

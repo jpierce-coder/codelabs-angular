@@ -1,5 +1,3 @@
-<!-- Exercise 09: Dynamically Change Content ngStyle Exercise -->
+<!-- Exercise 10: Basic ngFor Exercise -->
 
-<input [(ngModel)]="changeColor" [ngStyle]="{'color': changeColor}">
-
-<p [ngStyle]="{'color': changeColor}">{{changeColor}}</p>
+<p *ngFor="let item of foods">{{item}}</p>
