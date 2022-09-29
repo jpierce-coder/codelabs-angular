@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'header'
-
-
-  // changeTitle(e) {
-  //   this.title = e.target.value;
-  // }
+  isShow:boolean = true;
 }
