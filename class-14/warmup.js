@@ -1,11 +1,14 @@
-let n = 6;
+// // Warmup #1 Alt Method
 
-for (let i = 1; i <= n; i++) {
-  for (let j = 0; j < n; j++) {
-    process.stdout.write('');
-  }
-  for (let k = 0; k < i; k++) {
-    process.stdout.write('*');
-  }
-  console.log();
+// for (let i = 0; i <= 5; i++) {
+//   let str = '*';
+//   str = str.repeat(i);
+//   console.log(str);
+// }
+
+
+// OR 
+
+for (let i = 0; i < 6; i++) {
+  console.log('*'.repeat(i))
 }
