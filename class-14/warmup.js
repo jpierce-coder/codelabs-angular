@@ -1,14 +1,5 @@
-// // Warmup #1 Alt Method
+// Warmup #2
 
-// for (let i = 0; i <= 5; i++) {
-//   let str = '*';
-//   str = str.repeat(i);
-//   console.log(str);
-// }
-
-
-// OR 
-
-for (let i = 0; i < 6; i++) {
-  console.log('*'.repeat(i))
+for (let i = 3, j = 1, k = 3; i > 0; i--, j+=2, k--) {
+  console.log("-".repeat(i) + "*".repeat(j) + "-".repeat(i));
 }
