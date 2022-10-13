@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { TodoformComponent } from './todoform/todoform.component';
+import { TodolistComponent } from './todolist/todolist.component';
+import { TodoComponent } from './shared/todo/todo.component';
+import { SharedComponent } from './shared/shared.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    TodoformComponent,
+    TodolistComponent,
+    TodoComponent,
+    SharedComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

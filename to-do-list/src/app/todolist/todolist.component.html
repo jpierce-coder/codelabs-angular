@@ -1,0 +1,5 @@
+<h1>Todo List</h1>
+<!-- render todo components -->
+<div *ngFor="let todoInfo of todoList">
+  <app-todo [todo]="todoInfo"></app-todo>
+</div>
