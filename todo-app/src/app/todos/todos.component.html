@@ -1,59 +1,57 @@
 <section class="heading-section">
-  <h1 class="title is-1 has-text-centered">
-    ToDo List
-  </h1>
+  <h1 class="title is-1 has-text-centered">ToDo List</h1>
 </section>
 
 <div class="container">
   <div class="add-todo-box">
-    <form>
+    <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
       <h2 class="title is-5">New ToDo</h2>
 
-      <div class="field is-grouped">
+      <div class="field is-grouped" style="margin: 0">
         <p class="control is-expanded">
-          <input class="input" type="text" placeholder="Add a New ToDo Here">
+          <input
+            ngModel
+            #todoTextField="ngModel"
+            required
+            minlength="2"
+            name="text"
+            class="input"
+            type="text"
+            placeholder="Add a New ToDo Here"
+          />
         </p>
         <p class="control">
-          <button class="button alt-gradient-button">
+          <button class="button alt-gradient-button" type="submit">
             <i class="material-symbols-outlined">add</i>
             Add
           </button>
+        </p>
+      </div>
+
+      <div
+        class="container"
+        *ngIf="todoTextField.invalid && showValidationErrors"
+      >
+        <p class="help is-danger" *ngIf="todoTextField.errors.required">
+          Please enter text for your todo
+        </p>
+        <p class="help is-danger" *ngIf="todoTextField.errors.minlength">
+          Todo text must be at least 2 characters
         </p>
       </div>
     </form>
   </div>
 </div>
 
-
 <section class="section">
   <div class="container">
     <div class="todos-list">
-      <div class="todo-item completed">
-        <div class="check-box">
-          <i class="material-symbols-outlined">check</i>
-        </div>
-        <div class="todo-text">
-          This is a placeholder for todo text
-        </div>
-
-      </div>
-      <div class="todo-item">
-        <div class="check-box">
-          <i class="material-symbols-outlined">check</i>
-        </div>
-        <div class="todo-text">
-          This is a placeholder for todo text kjsadlfkjaskjd hfakjdshf; laskdhflaiussh ;glkahsdf; jksadjflka jksad;flkas df jksa;dfj aksjdflkasjf
-        </div>
-
-        <div class="todo-controls-box">
-          <div class="todo-control-button">
-            <i class="material-symbols-outlined">edit</i>
-          </div>
-          <div class="todo-control-button">
-            <i class="material-symbols-outlined">delete</i>
-          </div>
-        </div>
-      </div>
+      <app-todo-item
+        *ngFor="let todo of todos"
+        [todo]="todo"
+        (todoClicked)="toggleCompleted(todo)"
+        (todoClicked)="editToDo(todo)"
+        ></app-todo-item>
     </div>
   </div>
 </section>
