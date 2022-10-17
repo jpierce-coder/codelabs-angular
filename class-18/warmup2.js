@@ -1,7 +1,10 @@
 function convertToMiles(num) {
-  const converted = num * 0.621371;
-  console.log(converted);
+  const numInput = document.getElementById('converting').value;
+  const converted = numInput * 0.621371;
+  // console.log(converted);
+
+  document.getElementById("conversion").append(converted);
 }
 
 
-console.log(convertToMiles(554));
+// console.log(convertToMiles(554));
